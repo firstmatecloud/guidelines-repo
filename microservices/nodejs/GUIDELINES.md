@@ -52,6 +52,7 @@ instead of
     });
 }
 ```
+- Use CamelCase for methods and objects names and Pascal case for class definitions
 
 
 ### Tests

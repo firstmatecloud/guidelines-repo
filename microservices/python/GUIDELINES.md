@@ -14,3 +14,4 @@
 ### Code
 
 - Use the logging package to log instead of print statements.
+- Use snake_case for methods and objects.
