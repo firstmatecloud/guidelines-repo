@@ -1,0 +1,13 @@
+ingress:
+  enabled:
+    default: true
+  ingressPublicClassName: nginx
+
+frontend:
+  configmap:
+    data:
+      EXAMPLE_CONFIG: "example frontend config"
+backend:
+  configmap:
+    data:
+      EXAMPLE_CONFIG: "example backend config"

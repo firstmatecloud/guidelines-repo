@@ -1,0 +1,30 @@
+name: Validate Helm Chart
+on: [pull_request]
+jobs:
+  validate:
+    name: check helm template
+    runs-on: ubuntu-latest
+    env:
+      DIR: charts
+      HELM_EXPERIMENTAL_OCI: 1
+    steps:
+      - uses: azure/setup-helm@v1
+        with:
+          version: 'v3.7.1'
+        id: install-helm
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - run: helm dependency update ./charts
+      - run: helm lint ./charts
+  merge_pr:
+    name: auto-merge pull request
+    needs:
+      - validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: auto merge
+        uses: ridedott/merge-me-action@v2
+        with:
+          GITHUB_LOGIN: FirstMateBot
+          MERGE_METHOD: SQUASH
+          GITHUB_TOKEN: "${{ secrets.SYSTEM_PAT }}"

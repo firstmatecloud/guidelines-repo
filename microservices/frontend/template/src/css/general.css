@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+    font-family: 'N27';
+    src: url(../fonts/N27-Medium.otf);
+}
+
+
+
+body, html {
+    background-color: #455DFF;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+pre{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    font-size: 13px;
+    overflow: auto;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, .logo {
+    color: white;
+    font-family: "N27", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+
+}
+p, .alertbar {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+
+.logo{
+    padding: 24px 60px 0px 40px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h2, h3 {
+    color: white;
+    font-family: "N27", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+h3{
+    font-size: 17px;
+    margin: 20px 0px 10px 0px;
+}
+ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+li {
+    list-style-type: circle;
+    margin-left: 40px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+span.name{
+    #background-color: #4a90e2;
+    border-radius: 2px;
+    padding: 2px;
+    color: #4a90e2;
+}
+.secondary {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #94969C;
+
+}
+
+.loading-icon{
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -25px;
+    top: 50%;
+    left: 50%;
+}
+
+.center-loading{
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -150px;
+    top: 50%;
+    left: 50%;
+}
+
+
+.half-card {
+    width: 50%;
+}
+
+.card-title {
+    color: #ccc;
+    font-family: "N27", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.gradient-1 {
+    background-image: linear-gradient(45deg,#455DFF, #161850) !important;
+}
+.gradient-2 {
+    background-image: linear-gradient(-45deg,#455DFF, black) !important;
+}
+
+.center-base {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-img{
+    width: 20px;
+}
+.alertbar {
+    padding: 5px 20px;
+    font-size: 16px;
+    background-color:#455DFF;
+    color: white;
+}
+.statistic-card{
+    height: 100px! important;
+}
+.statistic-main{
+    font-size: 22px;
+    margin: 13px;
+}
+
+.money-box{
+    margin-top: 8px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 0px 16px;
+    height: 26px
+
+}
+
+.box-blue {
+    border: 1px solid #2970FF;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg,#161850, #2970FF);
+}
+
+.box-green {
+    border: 1px solid #17B26A;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg,#053321, #17B26A);
+}
+
+.box-bordered{
+    border: 1px solid #464646;
+    border-radius: 6px;
+    border-style: dashed;
+    background-color: #282828;
+    color: #999;
+}
+.modal-icon{
+    width: 50px;
+    text-align:  center;
+    font-size: 30px;
+    border-radius: 6px;
+    border: 1px solid #464646;
+    margin-bottom: 20px;
+}
+.modal-background {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/public/modal-circles.png");
+    background-repeat: no-repeat;
+    background-size: 340px 340px;
+    background-position-x: -120px;
+    background-position-y: -124px;
+    opacity: 0.2;
+}
+
+.modal-switch {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+}
+.savings{
+    font-weight: 700 !important;
+    font-size: 20px!important;
+    margin: 20px;
+}
+
+.ant-tag.available{
+    background-color: transparent !important;
+}
+
+.ant-tag.waiting{
+    background-color: transparent !important;
+}
+.dot{
+    float: left;
+
+    border-radius: 3px;
+    margin-top: 7px;
+    margin-right: 5px;
+    height: 6px;
+    width: 6px;
+}
+.dot-orange{
+    background-color: orange;
+}
+
+.dot-blue{
+    background-color: #2970FF;
+}
+.dot-green{
+    background-color: #17B26A;
+}
+.tag-rounded {
+    border-radius: 10px;
+}
+
+.git-install {
+    background-color: #2970FF;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    border-radius: 5px;
+}
+.git-install:hover {
+    background-color: #161850;
+}
+
+.ant-tag.open{
+    background-color: green;
+}
+.ant-tag.repo{
+    background-color: #2970FF;
+}
+.avatar{
+    width: 40px;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.access-overiew{
+    margin-top: 10px;
+    p{
+        line-height: 30px;
+    }
+}
+
+.repo{
+    margin: 10px;
+    padding: 5px;
+}
+.changes{
+    position: absolute;
+    left: -5px;
+    width: 100%;
+    bottom: 20px;
+}
+.suggestion-details{
+    text-align: center;
+    color: #bbb;
+}
+.accent{
+    font-weight: 500;
+    color: white;
+}
+li {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ant-timeline-item-content > a{
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+apiVersion: v2
+description: A Helm chart for Kubernetes
+name: firstmate-dev
+version: 0.0.1
+dependencies:
+  - name: backend
+    repository: oci://example.com/firstmate
+    version: 0.0.1
+  - name: frontend
+    repository: oci://example.com/firstmate
+    version: 0.0.1

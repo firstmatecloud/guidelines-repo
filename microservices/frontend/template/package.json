@@ -1,0 +1,82 @@
+{
+  "name": "ms-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@auth0/auth0-react": "^2.2.4",
+    "@aws-amplify/ui-react": "^6.1.4",
+    "@aws-sdk/client-eks": "^3.521.0",
+    "@aws-sdk/credential-providers": "^3.521.0",
+    "@azure/msal-browser": "^2.38.0",
+    "@azure/msal-react": "^1.5.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@nivo/line": "^0.85.1",
+    "@observablehq/plot": "^0.6.14",
+    "@react-oauth/google": "^0.11.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.17.2",
+    "axios": "^1.6.2",
+    "chart.js": "^4.4.2",
+    "date-fns": "^2.30.0",
+    "formik": "^2.4.2",
+    "framer-motion": "^10.12.18",
+    "ldrs": "^1.0.1",
+    "moment": "^2.30.1",
+    "prop-types": "^15.8.1",
+    "qs": "^6.11.2",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.8.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-gauge-chart": "^0.5.1",
+    "react-google-button": "^0.7.2",
+    "react-google-charts": "^4.0.1",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "^5.0.1",
+    "react-social-login-buttons": "^4.1.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "recharts": "^2.12.6",
+    "styled-components": "^6.1.0",
+    "typewriter-effect": "^2.21.0",
+    "uniqolor": "^1.1.1",
+    "web-vitals": "^2.1.4",
+    "yaml": "^2.3.4"
+  },
+  "scripts": {
+    "env": "chmod +x ./conf/env.sh && ./conf/env.sh && mv env-config.js ./public/",
+    "start": "npm run env && HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

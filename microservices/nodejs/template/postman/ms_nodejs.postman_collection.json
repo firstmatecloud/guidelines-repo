@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "4f271525-1ec8-45a9-92b7-1c9d9a1d4aec",
+		"name": "ms-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3074150"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{AI_ENV_NAME}}/health",
+					"host": [
+						"{{AI_ENV_NAME}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgId\": \"66582ac6fe6296630fa79289\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{EXAMPLE_MS_ENV_NAME}}/example/123",
+					"host": [
+						"{{EXAMPLE_MS_ENV_NAME}}"
+					],
+					"path": [
+						"example",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

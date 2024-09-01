@@ -1,0 +1,7 @@
+repo:
+  include:
+    - dev-infra-terraform
+    - dev-ms-python
+    - dev-ms-nodejs
+    - ms-python-ai-service
+    - ms-nodejs-git-manager

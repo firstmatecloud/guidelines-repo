@@ -1,0 +1,39 @@
+version: 0.0.4
+replicaCount: 1
+resources:
+  limits:
+    cpu: 200m
+    memory: 400Mi
+  requests:
+    cpu: 100m
+    memory: 200Mi
+image:
+  repository: example/ms-frontend
+  pullPolicy: IfNotPresent
+
+livenessProbe:
+  probePath: /
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 1
+  failureThreshold: 3
+readinessProbe:
+  probePath: /
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 1
+  failureThreshold: 3
+terminationGracePeriodSeconds: 10
+
+configmap:
+  data:
+    EXAMPLE_CONFIG: "example config"
+
+service:
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 8080
+  annotations:
+    fabric8.io/expose: "true"
