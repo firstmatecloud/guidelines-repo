@@ -57,4 +57,4 @@ instead of
 
 ### Tests
 
-- Every service function, should have dedicated unit tests.
+- Functions defined in services (not in controller and repo folders) should always have implemented unit tests.
