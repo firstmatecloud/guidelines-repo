@@ -23,7 +23,7 @@
 - Use the logger in the utils to log information.
 - Never log business data on info level. Debug logging business data is fine.
 - No harcoded configuration or secrets.
-- Prefer const over let: Using const means that once a variable is assigned, it cannot be reassigned. Preferring const will help you to not be tempted to use the same variable for different uses, and make your code clearer. If a variable needs to be reassigned, in a for loop, for example, use let to declare it. Another important aspect of let is that a variable declared using it is only available in the block scope in which it was defined. var is function scoped, not block-scoped, and shouldn't be used in ES6 now that you have const and let at your disposal
+- Prefer const over let: Using const means that once a variable is assigned, it cannot be reassigned. Preferring const will help you to not be tempted to use the same variable for different uses.
 - Use Async Await, avoid callback hell
 It's better to do
 ```
