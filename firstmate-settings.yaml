@@ -5,5 +5,6 @@ repo:
     - dev-ms-nodejs
     - ms-python-ai-service
     - ms-nodejs-git-manager
+    - demo-microservice
     - demo-microservice-delaware
 
