@@ -9,4 +9,5 @@ repo:
     - demo-microservice
     - demo-microservice-delaware
     - demo-microservice-jeroenh
+    - demo-*
 
