@@ -4,7 +4,12 @@
 
 ### Security
 
-- Routes should always check permissions with the grantAccessByPermissionMiddleware function
+- Routes should always check permissions with the grantAccessByPermissionMiddleware function. 
+  ```
+      # Example to show how to use grantAccessByPermissionMiddleware function
+      router.route("/path/to/endpoint")
+        .get(grantAccessByPermissionMiddleware([API_PERMISSIONS.PUBLIC_ENDPOINT, ...]),controller.function)
+  ```
 
 ### Secret handling
 
@@ -18,7 +23,17 @@
 
 ### Code
 
-- Never throw errors, always throw the custom ApplicationErrors 
+- Never throw errors, always throw the custom ApplicationError. This class is defined in utils/ApplicationError.js
+```
+export class ApplicationError extends Error {
+    constructor(errorCode){
+        super(errorCode.message)
+        this.code = errorCode.code
+    }
+}
+    
+```
+  
 - There should never be a console.log statement in the code.
 - Use the logger in the utils to log information.
 - Never log business data on info level. Debug logging business data is fine.
