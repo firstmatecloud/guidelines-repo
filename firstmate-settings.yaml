@@ -4,7 +4,6 @@ repo:
     - dev-ms-python
     - dev-ms-nodejs
     - dev-weird.char_in-repo]
-    - dev-azure_weird.characters
     - ms-python-ai-service
     - ms-nodejs-git-manager
     - demo-*
