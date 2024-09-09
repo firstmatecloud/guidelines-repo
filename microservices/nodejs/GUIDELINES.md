@@ -72,4 +72,4 @@ instead of
 
 ### Tests
 
-- Functions defined in services (not in controller and repo folders) should always have implemented unit tests.
+- Functions defined in services (services are located in the services folder in the repo) should always have implemented unit tests. These tests are implemented in the test folder.
