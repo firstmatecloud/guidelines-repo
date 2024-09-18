@@ -5,9 +5,9 @@ This repo contains company-wide guidelines to be followed by all developers and 
 This repo can be used as an example/template repo for all your developers. 
 Besides that, the FirstMate solution will use these guidelines to review all your pull request and make sure your code stays in line with the rules written here.
 
-For more information take a look at the [FirstMate website](https://firstmate.cloud)
+For more information take a look at the [FirstMate website](https://firstmate.io)
 
-For more technical information, we like to refer to the [FirstMate docs](https://docs.firstmate.cloud)
+For more technical information, we like to refer to the [FirstMate docs](https://docs.firstmate.io)
 
 ## Repo structure
 A company guideline repo should follow this structure:
