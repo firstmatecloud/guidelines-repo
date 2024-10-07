@@ -5,6 +5,7 @@ repo:
     - dev-ms-nodejs
     - dev-weird.char_in-repo]
     - ms-python-ai-service
+    - ms-react-platform
     - ms-nodejs-git-manager
     - demo-*
 
