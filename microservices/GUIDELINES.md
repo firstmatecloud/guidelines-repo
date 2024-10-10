@@ -29,8 +29,10 @@
 
 - When external API services are used, implement retries.
 - Function and methods should follow consistent naming patterns
-- Never log sensitive data on info level.
 - Data may never be stored to a specific path. We should always use a database or bucket to store data safely.
 - Use descriptive variable names
+- Use a logging framework that logs in json
+- Don't log overly sensitive information. If really needed, only use the debug level.
+
 
  
