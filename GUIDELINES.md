@@ -20,7 +20,7 @@
 - All code and comments should be written in English. 
 
 ### Logging
-- Use a logging framework
+- Use a logging framework that logs in json format
 - Don't log overly sensitive information. If really needed, only use the debug level.
 - Error messages should clear and should provide enough context to understand the issue.
 - Log messages should be in English
