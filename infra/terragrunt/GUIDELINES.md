@@ -2,13 +2,18 @@
 
 ## Rules
 
-### Structure
+### State 
+- Always use shared remote state from the configured azure storage account 
+- Never save TF state files in git, they can contain sensitive information in plain text format;
+- Renaming directories would require manual changes to the state.
 
-- Terraform modules should be defined in the modules repo, so they can be configured with terragrunt files.
-- The infra repo contains all the terragrunt configuration per environment.
-- Every kubernetes tool, should be added under the aks folder for terragrunt and terraform modules.
+### Structure
+- Separate environments in different directories under the infra folder.
+- Terraform modules should be defined in the modules directory. The terragrunt files in the infra folder will configure and deploy the modules.
+- Modules who setup kubernetes tools, should be added under the kubernetes directory.
 
 
 ### Terraform limitations
-
-- a change of directories should raise a warning about the terraform state.
+- Always create an output file that returns at least the resource id and name
+- Use for_each instead of count when possible
+- Use a variable with a default value over hardcoded static resource configuration.
