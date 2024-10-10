@@ -19,6 +19,6 @@
 - Use descriptive naming of variables, functions and classes
 - Separate source code from testing code in different folders
 - Error messages should clear and should provide enough context to understand the issue.
-- Use a logging framework that logs in json format.
+- Use a logging framework.
 
 
