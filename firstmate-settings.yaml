@@ -7,5 +7,7 @@ repo:
     - ms-python-ai-service
     - ms-react-platform
     - ms-nodejs-git-manager
+    - ms-nodejs-backend
+    - ms-nodejs-api-gateway
     - demo-*
 
