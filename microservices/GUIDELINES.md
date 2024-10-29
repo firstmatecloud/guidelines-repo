@@ -24,6 +24,15 @@
 - Charts should not have dependencies. other tools are managed by the environments charts.
 - Default values should be created with production environment in mind and not reference development.
 - Deployments may never contain volumeMounts and should be stateless
+- Helm charts should never contain kubernetes secrets in the templates. Secrets already exist in the cluster. The deployment.yaml should reference the existing secret with a secret name and key of the secret resulting in an environment variable. The secret name and key should be a variable in the values.yaml and look like this.
+```yaml
+        env:
+          - name: {{ $secretName }}
+            valueFrom:
+              secretKeyRef:
+                name: {{ $secret.secretName }}
+                key: {{ $secret.secretKey }}
+```
 
 ### Code
 

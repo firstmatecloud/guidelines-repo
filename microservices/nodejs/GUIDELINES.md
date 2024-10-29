@@ -11,11 +11,6 @@
         .get(grantAccessByPermissionMiddleware([API_PERMISSIONS.PUBLIC_ENDPOINT, ...]),controller.function)
   ```
 
-### Secret handling
-
-- Helm charts should never contain secrets in the template. Secrets should already exist in the cluster and translated to the deployment as an environment variable. Even the values.yaml should not contain the secret value, only the reference to the kubernetes secret name and key.
-
-
 ### Config
 
 - Environment variables in the code should be added in the helm chart values.yaml file under configmap for non secret environment variables.
@@ -42,7 +37,7 @@ export class ApplicationError extends Error {
 - Use Async Await, avoid callback hell
 It's better to do
 ```
-    var foo = async (function() {
+    const foo = async (function() {
       var resultA = await (firstAsyncCall());
       var resultB = await (secondAsyncCallUsing(resultA));
       var resultC = await (thirdAsyncCallUsing(resultB));
