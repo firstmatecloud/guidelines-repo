@@ -23,7 +23,7 @@
 
 ### Code
 
-- Never throw errors, always throw the custom ApplicationError. This class is defined in utils/ApplicationError.js
+- Never throw default errors, always throw the custom ApplicationError. This class is defined in utils/ApplicationError.js. It is allowed to propagate errors with the express next() function.
 ```
 export class ApplicationError extends Error {
     constructor(errorCode){
