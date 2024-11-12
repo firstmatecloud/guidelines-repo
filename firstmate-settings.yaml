@@ -6,4 +6,10 @@ repo:
     - dev-weird.char_in-repo]
     - ms-*
     - demo-*
-
+tools:
+  bearer:
+    enable: true
+    min_severity: 3
+  checkov:
+    enable: true
+    min_severity: 2
