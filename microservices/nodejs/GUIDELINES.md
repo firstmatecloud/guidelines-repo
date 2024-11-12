@@ -28,7 +28,7 @@ export class ApplicationError extends Error {
 }
     
 ```
-  
+
 - There should never be a console.log statement in the code.
 - Use the logger in the utils to log information.
 - Never log business data on info level. Debug logging business data is fine.
@@ -63,6 +63,11 @@ instead of
 }
 ```
 - Use CamelCase for methods and objects names and Pascal case for class definitions
+- Use ECMAScript modules. This means you should import modules and not require.
+```
+import moment from "moment";
+import service from "./service.js";
+```
 
 
 ### Tests
