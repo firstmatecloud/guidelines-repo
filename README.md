@@ -1,7 +1,6 @@
 # Guidelines Repo
 This repo contains company-wide guidelines to be followed by all developers and enforced by the FirstMate application.
 
-
 ## FirstMate
 This repo can be used as an example/template repo for all your developers. 
 Besides that, the FirstMate solution will use these guidelines to review all your pull request and make sure your code stays in line with the rules written here.
