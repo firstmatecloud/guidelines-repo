@@ -22,4 +22,6 @@
 - Use a logging framework.
 - Make sure there are no spelling mistakes in class and function names. For example 'craeteNewDocument' should be changed to 'createNewDocument'
 
+  
+
 
