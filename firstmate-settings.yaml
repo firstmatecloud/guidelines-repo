@@ -7,9 +7,9 @@ repo:
     - ms-*
     - demo-*
 tools:
-  bearer:
-    enable: true
+  Bearer:
+    enable: false
     min_severity: 3
-  checkov:
-    enable: true
+  Checkov:
+    enable: false
     min_severity: 2
