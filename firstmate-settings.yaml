@@ -3,7 +3,7 @@ repo:
     - dev-infra-terraform
     - dev-ms-python
     - dev-ms-nodejs
-    - dev-weird.char_in-repo]
+    - dev-weird.char_in-repo
     - ms-*
     - demo-*
 tools:
