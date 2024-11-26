@@ -8,7 +8,7 @@ resources:
     cpu: 100m
     memory: 200Mi
 image:
-  repository: example/ms-frontend
+  repository: example/ms-react
   pullPolicy: IfNotPresent
 
 livenessProbe:
