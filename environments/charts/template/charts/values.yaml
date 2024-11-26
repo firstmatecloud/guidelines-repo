@@ -6,7 +6,7 @@ ingress:
 frontend:
   configmap:
     data:
-      EXAMPLE_CONFIG: "example frontend config"
+      EXAMPLE_CONFIG: "example react config"
 backend:
   configmap:
     data:

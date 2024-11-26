@@ -1,10 +1,10 @@
-name: Release ms-frontend in a docker and helm chart.
+name: Release ms-react in a docker and helm chart.
 on:
   push:
     branches:
       - main
 env:
-  APP_NAME: ms-frontend
+  APP_NAME: ms-react
   REPO_NAME: example
   HELM_EXPERIMENTAL_OCI: 1
   ENVIRONMENT_REPOSITORY_DEV: chart-env-dev

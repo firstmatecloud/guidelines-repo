@@ -6,6 +6,6 @@ dependencies:
   - name: backend
     repository: oci://example.com/firstmate
     version: 0.0.1
-  - name: frontend
+  - name: react
     repository: oci://example.com/firstmate
     version: 0.0.1

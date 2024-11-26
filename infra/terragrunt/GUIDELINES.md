@@ -1,4 +1,4 @@
-# General Guidelines
+# Terragrunt Guidelines
 
 ## Rules
 

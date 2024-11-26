@@ -1,4 +1,4 @@
-# Guidelines
+# React Guidelines
 
 ## Rules
 
