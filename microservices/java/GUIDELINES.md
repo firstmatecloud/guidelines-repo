@@ -11,6 +11,14 @@
           return ResponseEntity.ok("Resource with ID: " + id);
       }
   ```
+- Avoid SQL injection, Never use plain string concatenation with user input as SQL queries. Always use the ORM framework to generate queries.
+```java
+Query query = session.createQuery("FROM User WHERE username = :username AND password = :password");
+query.setParameter("username", username);
+query.setParameter("password", password);
+List<User> users = query.list();
+```
+
 
 ## Config
 
@@ -46,6 +54,25 @@ public class ApplicationException extends Exception {
   - Annotation -> PascalCase (AnnotationName)
   - Boolean -> camelCase with prefixes like is, has, can, or should (isBoolean)
   - Test Classes -> PascalCase followed by Test (ClassNameTest)
+
+
+## Architectural
+
+- Controller Layer is responsible for:
+  - Accept and validate HTTP requests (e.g., query parameters, request bodies). 
+  - Route requests to appropriate service methods. 
+  - Handle HTTP-specific concerns like status codes and headers. 
+  - Return data or errors as HTTP responses (e.g., JSON or XML).
+- Service layer is responsible for:
+  - Implement business logic. 
+  - Handle data transformation between entities and DTOs. 
+  - Interact with multiple repositories if needed. 
+  - Perform validations that go beyond simple field checks (e.g., consistency rules). 
+  - Coordinate complex operations, like calling external APIs or sending events.
+- Repository layer is responsible for: 
+  - Direct interaction with the database (e.g., using JPA, Hibernate, or plain SQL). 
+  - Perform CRUD operations on entities. 
+  - Encapsulate queries to prevent exposing database specifics to higher layers.
 
 ## FinOps
 
