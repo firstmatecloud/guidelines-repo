@@ -85,5 +85,4 @@ public class ApplicationException extends Exception {
   ```
   - Use EXISTS instead of IN
   - Use UNION instead of OR
-  - 
   - Avoid Overloading the Database. Offload calculations to the application layer if they’re too resource-intensive. 
